@@ -28,7 +28,7 @@ Partial Class Form1
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.Close = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -43,7 +43,7 @@ Partial Class Form1
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.Close})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton2})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(855, 25)
@@ -80,14 +80,15 @@ Partial Class Form1
         Me.ToolStripButton1.Text = "ToolStripButton1"
         Me.ToolStripButton1.ToolTipText = "Refresh page"
         '
-        'Close
+        'ToolStripButton2
         '
-        Me.Close.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.Close.Image = Global.LanPlayStatus.My.Resources.Resources.close
-        Me.Close.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.Close.Name = "Close"
-        Me.Close.Size = New System.Drawing.Size(23, 22)
-        Me.Close.Text = "ToolStripButton2"
+        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton2.Image = Global.LanPlayStatus.My.Resources.Resources.close
+        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton2.Name = "ToolStripButton2"
+        Me.ToolStripButton2.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton2.Text = "ToolStripButton2"
+        Me.ToolStripButton2.ToolTipText = "Close"
         '
         'Form1
         '
@@ -115,5 +116,5 @@ Partial Class Form1
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents ToolStripProgressBar1 As ToolStripProgressBar
     Friend WithEvents ToolStripButton1 As ToolStripButton
-    Friend WithEvents Close As ToolStripButton
+    Friend WithEvents ToolStripButton2 As ToolStripButton
 End Class
